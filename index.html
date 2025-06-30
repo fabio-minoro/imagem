@@ -5,26 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARRAIA</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
     
-    body {
-      background: #fff;
-      overflow-x: hidden;
+    .container {
+      width: 100%;
+      min-height: 100vh;
     }
     
     img {
-      width: 100%;
+      width: 100vw;
       height: auto;
       display: block;
-      min-width: 100vw;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <img src="ARRAIA.jpg" alt="ARRAIA">
+  <div class="container">
+    <img src="ARRAIA.jpg" alt="ARRAIA">
+  </div>
 </body>
 </html>
